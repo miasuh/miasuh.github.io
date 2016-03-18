@@ -17,7 +17,7 @@
 
             var order = getURLParameter('order');
             var position = parseInt(getURLParameter('position'));
-            var pages = ['volunteering.html','yoga.html','hike.html','drawing.html']
+            var pages = ['yoga.html','hike.html','drawing.html','volunteering.html']
         </script>
   </head>
   <body>
@@ -29,13 +29,11 @@
     <section class="main-content">
       instructions landing page</p>
 
-<!-- 
-<p > <button type="button" align= "center" onClick="location.href=pages[position]+'?position='+(position+1)+'&order='+order;return false;">Next</button>
-</p> -->
 
-    <p > <button type="button" align= "center" onClick="location.href=pages[position]+'?position='+(position+1)+'&order='+order;return false;">Next</button>
+<!--     <p > <button type="button" align= "center" onClick="location.href=pages[position]+'?position='+(position+1)+'&order='+order;return false;">Next</button>
+    </p> -->
+    <p > <button type="button"><a href="instructions.html" onClick="location.href=pages[position]+'?position='+(position+1)+'&order='+order;return false;">Next</button>
     </p>
-
 
 
 
