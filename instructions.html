@@ -15,9 +15,14 @@
               return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
             }
 
-            var order = getURLParameter('order');
+            var order = getURLParameter('order').replace("%2C",",");
+            var page_array = order.split(',');
+
             var position = parseInt(getURLParameter('position'));
             var pages = ['volunteering.html','drawing.html','yoga.html','hike.html']
+            // alert(page_array + ":" + parseInt(page_array[position])-1 + ":" + );
+            var page_name = pages[parseInt(page_array[position])-1];
+
         </script>
   </head>
   <body>
@@ -30,7 +35,7 @@
       instructions landing page</p>
 
 
-    <p > <button type="button" align= "center" onClick="location.href=pages[position]+'?position='+(position+1)+'&order='+order;return false;">Next</button>
+    <p > <button type="button" align= "center" onClick="location.href=page_name+'?position='+(position+1)+'&order='+order;return false;">Next</button>
     </p>
 
 
