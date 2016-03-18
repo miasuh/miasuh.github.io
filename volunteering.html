@@ -39,7 +39,17 @@ The World is Fun - Seattle Volunteering &amp; Events (Seattle, WA)
 
 - Meetup</title>
 
-<script type="text/javascript">(function(){var ERRORS_LOGGED=false;window.onerror=function(msg,file){if(!ERRORS_LOGGED&&msg!=="NOTAREALERROR"&&file&&file.match(/meetup|facebook/gi)&&!file.match(/_crweb\.js$/gi)){ERRORS_LOGGED=true;var err_file=file.split("/").pop().replace(/\W/gi,"_");if(err_file.length>50){return}if(file.split(".").pop()!=="js"){err_file="in_page"}var readyState=(typeof(document.readyState)!=="undefined")?document.readyState:"complete";if(err_file==="in_page"&&readyState==="loading"){return}var xhr=new XMLHttpRequest();xhr.open("GET","/api/?method=logJSError&arg_error=&arg_key=js.error."+err_file,true);xhr.send()}}})();</script>
+<script type="text/javascript">(function(){var ERRORS_LOGGED=false;window.onerror=function(msg,file){if(!ERRORS_LOGGED&&msg!=="NOTAREALERROR"&&file&&file.match(/meetup|facebook/gi)&&!file.match(/_crweb\.js$/gi)){ERRORS_LOGGED=true;var err_file=file.split("/").pop().replace(/\W/gi,"_");if(err_file.length>50){return}if(file.split(".").pop()!=="js"){err_file="in_page"}var readyState=(typeof(document.readyState)!=="undefined")?document.readyState:"complete";if(err_file==="in_page"&&readyState==="loading"){return}var xhr=new XMLHttpRequest();xhr.open("GET","/api/?method=logJSError&arg_error=&arg_key=js.error."+err_file,true);xhr.send()}}})();
+
+
+	  function getURLParameter(name) {
+	              return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
+	            }
+
+	            var order = getURLParameter('order');
+	            var position = parseInt(getURLParameter('position'));
+	            var pages = ['hike.html','drawing','volunteering.html','yoga.html']
+</script>
 
 
 
