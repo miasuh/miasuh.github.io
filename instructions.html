@@ -22,6 +22,8 @@
             var pages = ['volunteering.html','food.html','yoga.html','hike.html', 'demo_intro.html']
             // alert(page_array + ":" + parseInt(page_array[position])-1 + ":" + );
             var page_name = pages[parseInt(page_array[position])-1];
+            document.write('position');
+
 
         </script>
   </head>
@@ -32,16 +34,18 @@
     </section> -->
 
     <section class="main-content">
-    <p>  
-          <b>[Instruction]<br><br></b>  
-    Please read the next page thoroughly and answer the questions in the following page.</p><p>
+    <p> 
+    Please read the next page thoroughly and answer the questions in following pages.</p><p>
     If you are ready, please press 'the next'.
 
 
     </p>
+<script>
+          document.write(getURLParameter('position');
+</script>
 
 
-    <p class="center-align"> <button type="button" onClick="location.href=page_name+'?position='+(position+1)+'&order='+order;return false;">Next</button>
+    <p class="center-align"> <button type="button" onClick="location.href=page_name+'?position='+(position+1)+'&order='+order;return false;">Next</button> 
     </p>
 
 
