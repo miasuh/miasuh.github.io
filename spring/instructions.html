@@ -24,6 +24,10 @@
             // alert(page_array + ":" + parseInt(page_array[position])-1 + ":" + );
             var page_name = pages[parseInt(page_array[position])-1];
 
+            if (position == 2) {
+              window.location = page_name+'?position='+(position+1)+'&order='+order;
+            }
+
         </script>
   </head>
   <body>
