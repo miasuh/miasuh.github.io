@@ -23,7 +23,9 @@
             var pages = ['11_food_far_non-match.html','3_food_near_match.html','12_yoga_far_non_match.html','4_yoga_near_match.html', '5_demo_intro.html']
             // alert(page_array + ":" + parseInt(page_array[position])-1 + ":" + );
             var page_name = pages[parseInt(page_array[position])-1];
-
+            if (position == 2) {
+              window.location = page_name+'?position='+(position+1)+'&order='+order;
+            }
         </script>
   </head>
   <body>
