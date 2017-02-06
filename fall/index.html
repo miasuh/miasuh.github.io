@@ -19,53 +19,68 @@
 
   </head>
     <script type="text/javascript">
-            
-            /**
-             * Randomize array element order in-place.
-             * Using Durstenfeld shuffle algorithm.
-             */
-            function shuffleArray(array) {
-                for (var i = array.length - 1; i > 0; i--) {
-                    var j = Math.floor(Math.random() * (i + 1));
-                    var temp = array[i];
-                    array[i] = array[j];
-                    array[j] = temp;
-                }
-                return array;
-            }
+ //            
+ //            /**
+ //             * Randomize array element order in-place.
+ //             * Using Durstenfeld shuffle algorithm.
+ //             */
+ //            function shuffleArray(array) {
+ //                for (var i = array.length - 1; i > 0; i--) {
+ //                    var j = Math.floor(Math.random() * (i + 1));
+ //                    var temp = array[i];
+ //                    array[i] = array[j];
+ //                    array[j] = temp;
+ //                }
+ //                return array;
+ //            }
 
-            var sequence = parseInt(Math.random()*2);
- //            var arr = [1, 2, 3, 4];
-            var arr1 = [1, 4];
-            var arr2 = [2, 3];
-            if (sequence == 0)
-              arr = shuffleArray(arr1).concat([5]);
-            else
-              arr = shuffleArray(arr2).concat([5]);
+ //            var sequence = parseInt(Math.random()*2);
+ // //            var arr = [1, 2, 3, 4];
+ //            var arr1 = [1, 4];
+ //            var arr2 = [2, 3];
+ //            if (sequence == 0)
+ //              arr = shuffleArray(arr1).concat([5]);
+ //            else
+ //              arr = shuffleArray(arr2).concat([5]);
 
-            //alert(arr);
- //            arr = shuffleArray(arr).concat([5]);
+ //            //alert(arr);
+ // //            arr = shuffleArray(arr).concat([5]);
 
         </script>
 
   <body>
     <section class="main-content">
-      <p> <br> <br> <br> This study is about understanding how people imagine their future behaviors<br><BR>
-
-      We present various behaviors in the future, and ask your opinion on that behavior. <br>
-
-
+      <p> <br> <br> <br> This study is about understanding how people imagine their future behaviors. We present various behaviors in the future, and ask your opinion on that behavior. <br>
  
-      <p>Your participation is voluntary, and you are free to stop your participation at any moment.       The whole study will take less than 3 minutes. <br>If you are 18 years of age or older, and consent to participate in the study, please click the “Next” </p>
+      <p>Your participation is voluntary, and you are free to stop your participation at any moment. The whole study will take less than 3 minutes. <br>If you are 18 years of age or older, and consent to participate in the study, please click the “Next” </p>
+
+<script>
+ 
+var randomlinks=new Array()
+
+randomlinks[0]="http://naver.com"
+randomlinks[1]="http://miasuh.github.io/fall/n_g_info.html"
+randomlinks[2]="http://miasuh.github.io/fall/f_g_info.html"
+randomlinks[3]="http://miasuh.github.io/fall/n_l_info.html"
+
+function randomlink(){
+window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
+}
+//-->
+</script>
+<form method="post">
+<!-- <p><input type="button" name="B1" value="Random Link >>" onclick="randomlink()"></p> </form>
+ -->
+<!--Uncomment below to use a regular text link instead
+<a href="javascript:randomlink()">Random Link</a>
+-->
+
+
 
 
 <div class="w3-container">
-
-
-  <p class="center-align"><button class="w3-btn w3-round w3-orange w3-slim"><a href="n_g_info.html">Next</button></a></p>
-
- 
-
+  <p class="center-align"><button class="w3-btn w3-round w3-orange w3-slim"><a href="javascript:randomlink()">Next</a>
+</button></a></p>
 </div>
 
 
