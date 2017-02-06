@@ -8,36 +8,13 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-
-    <script type="text/javascript">
-            
-            /**
-             * Randomize array element order in-place.
-             * Using Durstenfeld shuffle algorithm.
-             */
-            function shuffleArray(array) {
-                for (var i = array.length - 1; i > 0; i--) {
-                    var j = Math.floor(Math.random() * (i + 1));
-                    var temp = array[i];
-                    array[i] = array[j];
-                    array[j] = temp;
-                }
-                return array;
-            }
-
-            var sequence = parseInt(Math.random()*2);
- //            var arr = [1, 2, 3, 4];
-            var arr1 = [1, 4];
-            var arr2 = [2, 3];
-            if (sequence == 0)
-              arr = shuffleArray(arr1).concat([5]);
-            else
-              arr = shuffleArray(arr2).concat([5]);
-
-            //alert(arr);
- //            arr = shuffleArray(arr).concat([5]);
-
-        </script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+.w3-btn {width:100px;}
+</style>
+ 
+     
   </head>
   <body>
     <section class="main-content">
@@ -49,6 +26,7 @@ Think about what you will be doing <b>3 months from now.</b> Read the event desc
 
       If you understand above, please click 'Next'
       </p>
+      <p class="center-align"><button class="w3-btn w3-round w3-orange w3-slim"><a href="f_l_manu.html">Next</button></a></p>
 <!--<p class="center-align"> <a href="instructions.html" onclick="location.href=this.href+'?position=0&order='+arr;return false;"><b>Next</a>-->
 </p>
 
