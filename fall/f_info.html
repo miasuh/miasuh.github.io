@@ -1,38 +1,49 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
+<html lang="en">
+  <head><title>Design Evaluation</title>
     <meta charset="UTF-8">
-    <title>Meetup Design Evaluation by miasuh</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <!-- CSS--> 
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<style>
-.w3-btn {width:100px;}
-</style>
- 
-     
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <style> .w3-btn {width:100px;}</style>
+    <!-- jQuery CDN -->
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      var randomlinks= ["http://miasuh.github.io/fall/con_f_man.html", 
+        "http://miasuh.github.io/fall/bla_f_man.html",
+        "http://miasuh.github.io/fall/col_f_man.html",
+        "http://miasuh.github.io/fall/gai_f_man.html",
+        "http://miasuh.github.io/fall/los_f_man.html",
+        "http://miasuh.github.io/fall/fea_f_man.html",
+        "http://miasuh.github.io/fall/des_f_man.html",
+        "http://miasuh.github.io/fall/sim_f_man.html",
+        "http://miasuh.github.io/fall/dis_f_man.html"];
+      $("#btn_next").on("click", function(){
+        selection = Math.floor(Math.random()*randomlinks.length);
+        window.location=randomlinks[selection];
+      });
+    });
+    </script>
   </head>
   <body>
     <section class="main-content">
-<p>  
-<br><br><br>
-      Imagine you are looking for some events to participate in <b> 3 months from now </b>while browsing various events on the event application. <br> <br>
-Think about what you will be doing <b>3 months from now.</b> Read the event description on the next page, and answer the following questions.  </B> <br>
-</P><P> 
-
-      If you understand above, please click 'Next'
-      </p>
-      <p class="center-align"><button class="w3-btn w3-round w3-orange w3-slim"><a href="f_l_manu.html">Next</button></a></p>
-<!--<p class="center-align"> <a href="instructions.html" onclick="location.href=this.href+'?position=0&order='+arr;return false;"><b>Next</a>-->
-</p>
-
-
+      <p><br><br><br> Imagine you are looking for some events to participate in <b> 3 months from now </b>while browsing various events on the event application. <br> <br> Think about what you will be doing <b>3 months from now.</b> Read the event description on the next page, and answer the following questions.  </B> <br>      If you understand above, please click 'Next'
+      <form method="post">
+      <!-- <p><input type="button" name="B1" value="Random Link >>" onclick="randomlink()"></p> </form>-->
+      <!--Uncomment below to use a regular text link instead
+      <a href="javascript:randomlink()">Random Link</a> -->
+        <div class="w3-container">
+          <p class="center-align"><span class="w3-btn w3-round w3-orange w3-slim", id="btn_next"> Next </span></p>
+        </div>
+      </form>
     </section>
-
-  
   </body>
 </html>
+
