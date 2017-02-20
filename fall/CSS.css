@@ -1,0 +1,319 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* divide structures of page */
+#wrap {
+	width: 100%;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bababc+0,ffffff+74 */
+background: #bababc; /* Old browsers */
+background: -moz-linear-gradient(top, #bababc 0%, #f8f8fa 20%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #bababc 0%,#f8f8fa 20%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #bababc 0%,#f8f8fa 20%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababc', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+p { 
+font-family: 'Roboto', sans-serif;
+}
+li {
+	width: 100%;
+	padding-bottom: 10px;
+	list-style: none;
+	line-height: 40px;
+	font-size: 13px;
+	font-family: 'Roboto', sans-serif;
+}
+
+#header {
+	width: 100%;
+	background-color: white; 
+	height: 45px;
+	overflow: hidden;
+}
+
+#contents {
+	margin: auto;
+	
+	width: 1000px;
+	height: 2000px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+#headLine {
+	width: 1000px; 
+	height: 124px;
+	border-bottom: 0.3px solid #F1F1F1;
+	overflow: hidden;
+}
+
+#leftColumn {
+	width: 69%;
+	height: 574px; 
+	background-color:white;
+	float: left;
+}
+
+.descriptionTitle {
+	width: 100%;
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 35px;
+	margin-left: 70px;
+}
+
+.descriptionContents {
+	width: 75%;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18px;
+	margin-top: 20px;
+	margin-left: 70px;
+}
+
+#LossContainer {
+	width: 80%;
+	margin-top: 50px;
+	margin-left: 70px;
+}
+
+.LossTitle {
+	width: 100%;
+	font-size: 15px;
+	font-weight: bold;	
+	margin-bottom: 20px;
+}
+
+.orange {
+	font-size: 15px;
+	font-weight: bold;	
+	color: #fa5a02;
+}
+
+#rightColunm { 
+	width: 31%; 
+	height: 544px;
+	background-color: white;
+	padding-top: 30px;
+	float: left;
+}
+
+.dateTime {
+	width: 100%;
+	font-size: 15px;
+	line-height: 25px;
+	margin-left: 70px;
+}
+
+.locationLink {
+	width: 100%;
+	font-size: 15px;
+	line-height: 25px;
+	margin-left: 70px;
+	margin-top: 83px;
+}
+
+#instructor { 
+	width: 100%; 
+	height: 526px;
+	background-color:white;
+	border-top: 0.3px solid #F1F1F1;
+	clear: both;
+}
+
+#instructorContainer {
+	width:70%;
+	text-align: center;
+	padding-top: 70px;
+	margin:auto;
+}
+
+.imgInstructor{
+	width: 150px;
+	margin-bottom: 20px;
+}
+
+.instructorTitle{
+	font-size: 15px;
+	margin-bottom: 28px;
+}
+
+.instructorDescription {
+	font-size: 13px;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+}
+
+#footer {
+	width: 100%;
+	height: 200px;
+	background-color: white;
+	border-top: 0.3px solid #F1F1F1;
+}
+
+.socialNetwork{
+	font-size: 13px;
+	padding-top: 40px;
+	padding-left: 30px;
+}
+
+.social{
+	width: 200px;
+	padding-left: 19px;
+	padding-top: 20px;
+}
+
+/* Inside header */
+.logo {
+	width: 11.7%;
+	height: 50px;
+	font-size: 28px;
+	font-weight: bold;
+	margin-top: 5px;
+	text-align: center;
+	float: left;
+}
+
+.LOGOTEXT{
+	width: 80%;	
+}
+
+.search {
+	width: 45.4%;
+	height: 50px;
+	font-size: 14px;
+	color: #bdbebf;
+	line-height: 48px;
+	text-align: center;
+	float: left;
+	border-left: 0.1px solid #F1F1F1;
+}
+
+.magnifier{
+	width: 10px;
+	height: 10px;
+}
+.lossIcon {
+	width: 40px;
+	height: 40px;
+	margin-right: 15px;
+	vertical-align: middle;
+}
+
+.browseEvent {
+	width: 11.7%;
+	height: 50px;
+	font-size: 14px;
+	color: black;
+	line-height: 48px;
+	text-align: center;
+	float: left;
+	border-left: 0.1px solid #F1F1F1;
+}
+
+.help {
+	width: 8.8%;
+	height: 50px;
+	font-size: 14px;
+	color: black;
+	line-height: 48px;
+	text-align: center;
+	float: left;
+	border-left: 0.1px solid #F1F1F1;
+}
+
+.signup {
+	width: 8.8%;
+	height: 50px;
+	font-size: 14px;
+	color: black;
+	line-height: 48px;
+	text-align: center;
+	float: left;
+	border-left: 0.1px solid #F1F1F1;
+	
+}
+
+.login {
+	width: 13%;
+	height: 50px;
+	font-size: 14px;
+	color: black;
+	line-height: 48px;
+	text-align: center;
+	float: left;
+	border-left: 0.1px solid #F1F1F1;
+	border-right: 0.1px solid #F1F1F1;
+}
+
+/* Inside headline */
+#titleContainer {
+	background-color:white;
+	width: 70%;
+	height: 124px;	
+	float: left;
+}
+.title {
+	width: 100%;
+	height: 50px;
+	padding-top: 30px;
+	margin-left: 70px;
+	font-size: 33px;
+	
+}
+.subtitle {
+	height: 50px;
+	float: left;
+}
+
+#buttonContainer {
+	background-color: white;
+	width: 30%;
+	height: 124px;
+	padding-top: 40px;
+	text-align: center;
+	float: left;
+}
+
+/* Button */
+/*http://www.bestcssbuttongenerator.com/ */
+
+.myButton {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff5500), color-stop(1, #cc4400));
+	background:-moz-linear-gradient(top, #ff5500 5%, #cc4400 100%);
+	background:-webkit-linear-gradient(top, #ff5500 5%, #cc4400 100%);
+	background:-o-linear-gradient(top, #ff5500 5%, #cc4400 100%);
+	background:-ms-linear-gradient(top, #ff5500 5%, #cc4400 100%);
+	background:linear-gradient(to bottom, #ff5500 5%, #cc4400 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5500', endColorstr='#cc4400',GradientType=0);
+	background-color:#ff5500;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+	border:1px solid #29668f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	padding:9px 40px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+	margin-top: 40px;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #cc4400), color-stop(1, #ff5500));
+	background:-moz-linear-gradient(top, #cc4400 5%, #ff5500 100%);
+	background:-webkit-linear-gradient(top, #cc4400 5%, #ff5500 100%);
+	background:-o-linear-gradient(top, #cc4400 5%, #ff5500 100%);
+	background:-ms-linear-gradient(top, #cc4400 5%, #ff5500 100%);
+	background:linear-gradient(to bottom, #cc4400 5%, #ff5500 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc4400', endColorstr='#ff5500',GradientType=0);
+	background-color:#cc4400;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
