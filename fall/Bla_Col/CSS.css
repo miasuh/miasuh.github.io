@@ -32,7 +32,7 @@ li {
 #contents {
 	margin: auto;
 	width: 1000px;
-	height: 1200px;
+	height: 1300px;
 	margin-top: 10px;
 	overflow: hidden;
 }
@@ -46,7 +46,7 @@ li {
 
 #leftColumn {
 	width: 69%;
-	height: 574px; 
+	height: 704px; 
 	background-color:white;
 	float: left;
 }
@@ -89,7 +89,7 @@ li {
 
 #rightColunm { 
 	width: 31%; 
-	height: 544px;
+	height: 674px;
 	background-color: white;
 	padding-top: 30px;
 	float: left;
@@ -151,12 +151,13 @@ li {
 
 .instructorTitle{
 	font-size: 15px;
-	margin-bottom: 28px;
+	margin-bottom: 15px;
+	font-weight: bold;
 }
 
 .instructorDescription {
 	width: 580px;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 25px;
 	letter-spacing: 0.5px;
 	padding-top:10px;
@@ -212,8 +213,8 @@ li {
 	height: 10px;
 }
 .lossIcon {
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 	margin-right: 15px;
 	vertical-align: middle;
 }
