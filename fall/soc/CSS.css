@@ -20,7 +20,6 @@ li {
 	list-style: none;
 	line-height: 40px;
 	font-size: 13px;
-    font-family: 'Roboto', sans-serif;
 }
 
 #header {
@@ -56,7 +55,7 @@ li {
 	width: 100%;
 	font-size: 15px;
 	font-weight: bold;
-	margin-top: 35px;
+	margin-top: 40px;
 	margin-left: 70px;
 }
 
@@ -67,6 +66,19 @@ li {
 	line-height: 25px;
 	margin-top: 20px;
 	margin-left: 70px;
+}
+
+.redBox {
+	width: 80%;
+	margin-top: 40px;
+	margin-left: 70px;
+	height: 67px;
+	font-size: 16px;
+/*	font-style: italic;
+*/	line-height: 24px;
+	padding: 20px 20px;
+	background:#FFE5CC;
+	
 }
 
 #LossContainer {
@@ -152,12 +164,13 @@ li {
 
 .instructorTitle{
 	font-size: 15px;
-	margin-bottom: 28px;
+	margin-bottom: 20px;
+	font-weight: bold;
 }
 
 .instructorDescription {
 	width: 580px;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 25px;
 	letter-spacing: 0.5px;
 	padding-top:10px;
@@ -337,6 +350,3 @@ li {
 	position:relative;
 	top:1px;
 }
-
-
-
