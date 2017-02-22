@@ -154,6 +154,7 @@ li {
 	margin-bottom: 15px;
 	font-weight: bold;
 	padding-top:10px;
+	font-weight: bold;
 
 }
 
@@ -297,7 +298,8 @@ li {
 	float: left;
 }
 .AYC {
-	margin-right:80px; 
+	margin-right:75px; 
+	font-weight: bold;
 }
 
 /* Button */

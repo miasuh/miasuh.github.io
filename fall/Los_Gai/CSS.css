@@ -152,7 +152,9 @@ li {
 
 .instructorTitle{
 	font-size: 15px;
-	margin-bottom: 28px;
+	margin-bottom: 20px;
+	font-weight: bold;	
+
 }
 
 .instructorDescription {
@@ -295,7 +297,9 @@ li {
 	float: left;
 }
 .AYC {
-	margin-right:80px; 
+	margin-right:80px;
+	font-weight: bold;
+
 }
 
 /* Button */
