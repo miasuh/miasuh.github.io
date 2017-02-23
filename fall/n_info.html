@@ -16,33 +16,30 @@
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
+      $("#btn_next").css("opacity",0);
       var randomlinks= [
-        "http://miasuh.github.io/fall/Bla_Col/bla_n_man.html",
-        "http://miasuh.github.io/fall/Bla_Col/col_n_man.html",
-        "http://miasuh.github.io/fall/Los_Gai/gai_n_man.html",
-        "http://miasuh.github.io/fall/Los_Gai/los_n_man.html",
-        "http://miasuh.github.io/fall/fea_des/fea_n_man.html",
-        "http://miasuh.github.io/fall/fea_des/des_n_man.html",
-        "http://miasuh.github.io/fall/soc/dist_n_man.html",
-        "http://miasuh.github.io/fall/soc/prox_n_man.html",
-        "http://miasuh.github.io/fall/cont/cont_n_man.html"];
+        "http://miasuh.github.io/fall/Bla_Col/bla_f_man.html",
+        "http://miasuh.github.io/fall/Bla_Col/col_f_man.html",
+        "http://miasuh.github.io/fall/Los_Gai/gai_f_man.html",
+        "http://miasuh.github.io/fall/Los_Gai/los_f_man.html",
+        "http://miasuh.github.io/fall/fea_des/fea_f_man.html",
+        "http://miasuh.github.io/fall/fea_des/des_f_man.html",
+        "http://miasuh.github.io/fall/soc/dist_f_man.html",
+        "http://miasuh.github.io/fall/soc/prox_f_man.html",
+        "http://miasuh.github.io/fall/cont/cont_f_man.html"];
+        var time = setTimeout(function(){
+          $("#btn_next").css("opacity",1);
+        }, 3000);
       $("#btn_next").on("click", function(){
         selection = Math.floor(Math.random()*randomlinks.length);
         window.location=randomlinks[selection];
       });
     });
     </script>
-    <script type='text/javascript'>
-    setTimeout(function() {
-        document.getElementById('btn_next').disabled = false;
-    }, 30000);
-    </script>
 
-  </head>
-  
   <body>
     <section class="main-content">
-      <p><br><br><br><br>Imagine that you are looking for some events to participate in <b> a week from now. </b> <br><br>Think about what you will be doing <b>a week from now </b>for 30 seconds. After 30 seconds, click 'Next' button that will appear below. 
+      <p><br><br><br><br>Imagine that you are looking for some events to participate in <b> a week from now. </b> <br><br>Think about what you will be doing <b>a week from now </b>at least for 30 seconds. After 30 seconds, click 'Next' button below. 
         <br>
       <form method="post">
       <!-- <p><input type="button" name="B1" value="Random Link >>" onclick="randomlink()"></p> </form>-->
