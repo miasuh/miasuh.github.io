@@ -32,22 +32,30 @@
       });
     });
     </script>
+    <script type='text/javascript'>
+    setTimeout(function() {
+        document.getElementById('btn_next').disabled = false;
+    }, 30000);
+    </script>
+
   </head>
+  
   <body>
     <section class="main-content">
-      <p><br><br><br><br>Imagine that you are looking for some events to participate in <b> a week from now. </b> <br><br>
-
-        The next page will show a certain event that is planned <b> a week from now.</b> <BR><font color ="#FF5309">Read it thoroughly</font>, and RSVP <font color ="#FF5309">by clicking one of the RSVP buttons </font>at the top right of the page. <br> <br> Please note that once you complete the survey, <font color ="#095BFF">you will get paid $1 regardless of your intention to join the event</font>. So please honestly indicate your intention to join the event based on what you will be doing <b>a week from now. </b><br>
-        <br>If you understand above, please click 'Next' <br> <br>
+      <p><br><br><br><br>Imagine that you are looking for some events to participate in <b> a week from now. </b> <br><br>Think about what you will be doing <b>a week from now </b>for 30 seconds. After 30 seconds, click 'Next' button that will appear below. 
+        <br>
       <form method="post">
       <!-- <p><input type="button" name="B1" value="Random Link >>" onclick="randomlink()"></p> </form>-->
       <!--Uncomment below to use a regular text link instead
       <a href="javascript:randomlink()">Random Link</a> -->
         <div class="w3-container">
-          <p class="center-align"><span class="w3-btn w3-round w3-orange w3-slim", id="btn_next"> Next </span></p>
+          <p class="center-align"><span class="w3-btn w3-round w3-orange w3-slim", id="btn_next", disabled="disabled"> Next </span></p>
         </div>
       </form>
     </section>
+
+
+
   </body>
 </html>
 
