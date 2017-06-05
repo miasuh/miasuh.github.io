@@ -16,31 +16,25 @@
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
-      $("#btn_next").css("opacity",0);
-      var randomlinks= [
-        "http://miasuh.github.io/fall/Bla_Col/bla_f_man.html",
-        "http://miasuh.github.io/fall/Bla_Col/col_f_man.html",
-        "http://miasuh.github.io/fall/Los_Gai/gai_f_man.html",
-        "http://miasuh.github.io/fall/Los_Gai/los_f_man.html",
-        "http://miasuh.github.io/fall/fea_des/fea_f_man.html",
-        "http://miasuh.github.io/fall/fea_des/des_f_man.html",
-        "http://miasuh.github.io/fall/soc/dist_f_man.html",
-        "http://miasuh.github.io/fall/soc/prox_f_man.html",
-        "http://miasuh.github.io/fall/cont/cont_f_man.html"];
-        var time = setTimeout(function(){
-          $("#btn_next").css("opacity",1);
-        }, 20000);
+      var randomlinks= ["http://www.surveygizmo.com/s3/3565224/Mooc-f-5th-challenge", 
+        "http://www.surveygizmo.com/s3/3565223/Mooc-n-5th-challenge"];
       $("#btn_next").on("click", function(){
         selection = Math.floor(Math.random()*randomlinks.length);
         window.location=randomlinks[selection];
       });
     });
     </script>
-
   </head>
   <body>
     <section class="main-content">
-      <p><iframe src="http://www.surveygizmo.com/s3/3503440/mia-mooc-far-manipulation" frameborder="0" width="1000" height="500" style="overflow:hidden"></iframe>
+      <p><br><br><br>
+        this is test HOW<br><br>
+
+        
+
+
+
+ </p>
 
       <form method="post">
       <!-- <p><input type="button" name="B1" value="Random Link >>" onclick="randomlink()"></p> </form>-->
@@ -53,4 +47,3 @@
     </section>
   </body>
 </html>
-
